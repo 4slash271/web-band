@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+/* font-family: 'Lato', sans-serif; */
+
+
+/************************* defaul t*************************/
+html,body{
+    font: 16px 'Lato', sans-serif;
+    letter-spacing: -1px;
+    height: 5000px;
+}
+    
+.wrapper{
+    max-width: 800px;
+    padding: 0 16px;
+    margin: auto;
+
+}
+
+/***********************header-wrapper***************************/
+.header-wrapper{
+    position: fixed;
+    width: 100%;
+    background-color: #121212;
+    color: #f9f9f9;
+}
+.header-wrapper > .navi-wrapper{
+    float: left;
+}
+.header-wrapper > .navi-wrapper > .navi{
+    position: relative;
+    float: left;
+}
+.header-wrapper > .navi-wrapper > .navi > a{
+    padding: 1em 1.25em;
+}
+.header-wrapper > .navi-wrapper > .navi:hover{
+    background-color: #fff;
+    color: #121212;
+}
+.header-wrapper > .navi-wrapper > .navi:hover > .sub-wrap{
+    display: block;
+}
+.header-wrapper > .navi-wrapper > .navi > .sub-wrap{
+    position: absolute;
+    background-color: #f1f1f1;
+}
+.header-wrapper > .navi-wrapper > .navi > .sub-wrap{
+    display: none;
+    box-shadow: 0 0 6px rgba(0,0,0,0.5);
+}
+.header-wrapper > .navi-wrapper > .navi > .sub-wrap > .sub:hover{
+    background-color: #ddd;
+}
+.header-wrapper > .navi-wrapper > .navi > .sub-wrap > .sub > a{
+    width: 160px;
+    padding: 1em 1.25em;
+}
+.header-wrapper > .search-wrapper{
+    float: right;
+}
+.header-wrapper > .search-wrapper:hover{
+    background-color: #f32;
+}
+.header-wrapper > .search-wrapper > a{
+    padding: 1em 1.25em;
+}
+/********************** main-wrapper ****************************/
+
+/********************** band-wrapper ****************************/
+
+/********************* tour-wrapper *****************************/
+
+/********************** map-wrapper *****************************/
+
+/********************** footer-wrapper***************************/
+
+/************************** response ****************************/
+@media(max-width: 1400px){
+
+}
+
+@media(max-width: 1200px){
+
+}
+
+@media(max-width: 992px){
+
+}
+
+@media(max-width: 768px){
+
+}
+
+@media(max-width: 576px){
+
+}
