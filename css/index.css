@@ -5,7 +5,7 @@
 /************************* defaul t*************************/
 html,body{
     font: 16px 'Lato', sans-serif;
-    letter-spacing: -1px;
+    letter-spacing: -0.5px;
     height: 5000px;
     color: #121212;
 }
@@ -23,6 +23,7 @@ html,body{
     width: 100%;
     background-color: #121212;
     color: #f9f9f9;
+    z-index: 9;
 }
 .header-wrapper > .navi-wrapper{
     float: left;
@@ -92,6 +93,48 @@ html,body{
     padding: 1em 1.25em;
 }
 /********************** main-wrapper ****************************/
+.main-wrapper{
+    position: relative;
+    padding-top: 48px;
+}
+.main-wrapper >.bt-swiper{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    color: #f9f9f9;
+    font-weight: lighter;
+    font-size: 5em;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+    z-index: 5;
+    transition: all .5s;
+    opacity: .3;
+}
+.main-wrapper >.bt-swiper:hover{
+    opacity: 1;
+}
+.main-wrapper > .bt-swiper.bt-prev{
+    left: 16px;
+}
+.main-wrapper > .bt-swiper.bt-next{
+    right: 16px;
+}
+.main-wrapper .slogan-wrap{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #f9f9f9;
+    bottom: 32px;
+}
+.main-wrapper .slogan-wrap > .title{
+    font-size: 1.5em;
+    margin-bottom: 0.75em;
+}
+.main-wrapper .slogan-wrap > .content{
+    font-weight: bold;
+}
 
 /********************** band-wrapper ****************************/
 
