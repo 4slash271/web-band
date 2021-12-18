@@ -9,13 +9,13 @@ html,body{
     height: 5000px;
     color: #121212;
 }
-    
 .wrapper{
     max-width: 800px;
-    padding: 0 16px;
+    padding: 5em 1em;
     margin: auto;
-
 }
+.wrapper > h2.title{}
+.wrapper > h3.title{}
 
 /***********************header-wrapper***************************/
 .header-wrapper{
