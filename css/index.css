@@ -152,8 +152,18 @@ html,body{
     line-height: 1.75;
     color: #aaa;
     text-align: justify;
-
-    
+}
+.band-wrapper > .wrapper > .member-wrapper >.member{
+    width:33.333%;
+    float: left; 
+    padding:6%;
+    text-align: center;
+}
+.band-wrapper > .wrapper > .member-wrapper >.member > .name{
+    margin-bottom: 1.25em;
+}
+.band-wrapper > .wrapper > .member-wrapper >.member > .img{
+    border-radius: 4px;
 }
 
 /********************* tour-wrapper *****************************/
@@ -196,5 +206,12 @@ html,body{
 }
 
 @media(max-width: 576px){
+    .band-wrapper > .wrapper > .comment{
+    margin-bottom: 3em;
+}
+    .band-wrapper > .wrapper > .member-wrapper >.member{
+        width:100%;
+        padding:5% 20%;
+    }
 
 }
