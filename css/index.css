@@ -23,7 +23,7 @@ html,body{
     letter-spacing: 5px;
 }
 .wrapper > h3.title{
-    margin-bottom: 2em;
+    margin-bottom: 1.75em;
     font-style: italic;
     color: #aaa;
 }
@@ -173,8 +173,75 @@ html,body{
     color: #f9f9f9;
 }
 .tour-wrapper > .wrapper > .ticket-wrap{
-    color: #f9f9f9;
+    background-color: #f9f9f9;
+    color: #555;
+    margin-bottom: 2em;
 }
+.tour-wrapper > .wrapper > .ticket-wrap > .ticket{
+    padding: 0.75em;
+}
+.tour-wrapper > .wrapper > .ticket-wrap > .ticket:not(:last-child){
+    border-bottom: 1px solid #ccc;
+}
+.tour-wrapper > .wrapper > .ticket-wrap > .ticket > span{
+    float: left;
+    padding:.325em;
+}
+.tour-wrapper > .wrapper > .ticket-wrap > .ticket > span.soldout{
+    background-color: #f32;
+    color: #f9f9f9;
+    margin-left: 1em;
+}
+.tour-wrapper > .wrapper > .ticket-wrap > .ticket > span.cnt{
+    float: right;
+    background-color: #121212;
+    color: #f9f9f9;
+    border-radius: 50%;
+    margin-right: 2em;
+    padding: 0.325em 0.625em;
+}
+.tour-wrapper > .wrapper > .city-wrap{
+    width: 102%;
+}
+.tour-wrapper > .wrapper > .city-wrap > .city{
+    float: left;
+    width: 31.3333%;
+    margin-right: 2%;
+}
+.tour-wrapper > .wrapper > .city-wrap > .city > .img-wrap > img{
+    transition:  all .5s;
+}
+.tour-wrapper > .wrapper > .city-wrap > .city > .img-wrap:hover >img{
+    opacity: .7;
+}
+.tour-wrapper > .wrapper > .city-wrap > .city > .cont-wrap{
+    background-color: #f9f9f9;
+    padding:1em;
+}
+.tour-wrapper > .wrapper > .city-wrap > .city > .cont-wrap > .name{
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 1em;
+}
+.tour-wrapper > .wrapper > .city-wrap > .city > .cont-wrap > .date{
+    color: #777;
+    margin-bottom: 1em;
+}
+.tour-wrapper > .wrapper > .city-wrap > .city > .cont-wrap > .comment{
+    line-height: 1.25;
+    margin-bottom: 1em;
+}
+.tour-wrapper > .wrapper > .city-wrap > .city > .cont-wrap > .bt-buy{
+    padding: 0.625em 0.875em;
+    background-color: #121212;
+    color: #f9f9f9;
+    transition: all .5s;
+}
+.tour-wrapper > .wrapper > .city-wrap > .city > .cont-wrap > .bt-buy:hover{
+    background-color: #ccc;
+    color: #121212;
+}
+
 
 /********************** map-wrapper *****************************/
 
@@ -221,5 +288,12 @@ html,body{
         width:100%;
         padding:5% 20%;
     }
-
+    .tour-wrapper > .wrapper > .city-wrap{
+        width: 100%;
+    }
+    .tour-wrapper > .wrapper > .city-wrap > .city{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 5%;
+    }
 }
