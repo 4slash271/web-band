@@ -149,8 +149,7 @@ html,body{
 
 /********************** band-wrapper ****************************/
 .band-wrapper > .wrapper > .comment{
-    line-height: 1.75;
-    color: #aaa;
+    line-height: 1.5;
     text-align: justify;
 }
 .band-wrapper > .wrapper > .member-wrapper >.member{
@@ -167,6 +166,15 @@ html,body{
 }
 
 /********************* tour-wrapper *****************************/
+.tour-wrapper{
+    background-color: #121212;
+}
+.tour-wrapper > .wrapper > h2.title{
+    color: #f9f9f9;
+}
+.tour-wrapper > .wrapper > .ticket-wrap{
+    color: #f9f9f9;
+}
 
 /********************** map-wrapper *****************************/
 
