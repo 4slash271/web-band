@@ -14,8 +14,19 @@ html,body{
     padding: 5em 1em;
     margin: auto;
 }
-.wrapper > h2.title{}
-.wrapper > h3.title{}
+.wrapper > .title{
+    text-align: center;
+}
+.wrapper > h2.title{
+    margin-bottom: 1em;
+    font-size: 1.525em;
+    letter-spacing: 5px;
+}
+.wrapper > h3.title{
+    margin-bottom: 2em;
+    font-style: italic;
+    color: #aaa;
+}
 
 /***********************header-wrapper***************************/
 .header-wrapper{
@@ -137,6 +148,13 @@ html,body{
 }
 
 /********************** band-wrapper ****************************/
+.band-wrapper > .wrapper > .comment{
+    line-height: 1.75;
+    color: #aaa;
+    text-align: justify;
+
+    
+}
 
 /********************* tour-wrapper *****************************/
 
