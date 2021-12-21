@@ -247,6 +247,57 @@ html,body{
 
 /********************** footer-wrapper***************************/
 
+/********************** modal-wrapper***************************/
+.modal-wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 100vh;
+}
+.modal-wrapper > .modal-wrap{
+    width: 800px;
+    margin: 15vh auto;
+    background-color: #f9f9f9;
+    box-shadow: 0,0,10px rgba(0,0,0,0.5)
+}
+.modal-wrapper > .modal-wrap > .modal-header{
+    background-color: #009688;
+    color: #f9f9f9;
+}
+.modal-wrapper > .modal-wrap > .modal-header > h2.title{
+    color: #f9f9f9;
+    text-align: center;
+    font-size: 2em;
+    padding: 1.25em 0;
+    letter-spacing: 4px;
+    line-height: 1;
+}
+.modal-wrapper > .modal-wrap > .modal-header > h2.title > .fa{
+    margin-right: 0.5m;
+}
+.modal-wrapper > .modal-wrap > .modal-header > .bt-close{
+    position: absolute;
+    top:0;
+    right: 0;
+    padding: 0.75em 1em;
+    font-size: 1.125em;
+    color: #f9f9f9;
+    cursor: pointer;
+}
+.modal-wrapper > .modal-wrap > .modal-header > .bt-close:hover{
+    background-color: #013b36;
+}
+.modal-wrapper > .modal-wrap > .modal-body{
+    padding: 1em;
+}
+.modal-wrapper > .modal-wrap > .modal-body > form{
+}
+.modal-wrapper > .modal-wrap > .modal-body > form > *{
+    width: 100%;
+}
 /************************** response ****************************/
 @media(max-width: 1400px){
 
@@ -257,6 +308,9 @@ html,body{
 }
 
 @media(max-width: 992px){
+    .modal-wrapper > .modal-wrap{
+        width: 700px;
+    }
 
 }
 
@@ -275,6 +329,9 @@ html,body{
     }
     .header-wrapper > .mb-navi-wrapper.active{
         display: block ;
+    }
+    .modal-wrapper > .modal-wrap{
+        width: 500px;
     }
 
 
@@ -295,5 +352,8 @@ html,body{
         width: 100%;
         margin-right: 0;
         margin-bottom: 5%;
+    }
+    .modal-wrapper > .modal-wrap{
+        width: 96%;
     }
 }
