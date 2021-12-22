@@ -264,6 +264,7 @@ html,body{
     box-shadow: 0,0,10px rgba(0,0,0,0.5)
 }
 .modal-wrapper > .modal-wrap > .modal-header{
+    position: relative;
     background-color: #009688;
     color: #f9f9f9;
 }
@@ -276,7 +277,7 @@ html,body{
     line-height: 1;
 }
 .modal-wrapper > .modal-wrap > .modal-header > h2.title > .fa{
-    margin-right: 0.5m;
+    margin-right: 0.5em;
 }
 .modal-wrapper > .modal-wrap > .modal-header > .bt-close{
     position: absolute;
@@ -297,6 +298,41 @@ html,body{
 }
 .modal-wrapper > .modal-wrap > .modal-body > form > *{
     width: 100%;
+}
+.modal-wrapper > .modal-wrap > .modal-body > form > label{
+    margin-bottom: 0.75em;
+}
+.modal-wrapper > .modal-wrap > .modal-body > form > input{ 
+    margin-bottom: 1.25em;
+    padding: 0.75em;
+    border: 1px solid #ccc;
+}
+.modal-wrapper > .modal-wrap > .modal-body > form > button{
+    padding: 1em;
+    background-color: #009688;
+    color: #f9f9f9;
+}
+.modal-wrapper > .modal-wrap > .modal-body > form > button:hover{
+    background-color: #013b36;
+}
+.modal-wrapper > .modal-wrap > .modal-footer{
+    padding: 1em;
+}
+.modal-wrapper > .modal-wrap > .modal-footer > .bt-close{
+    float: left;
+    background-color: #f44336;
+    padding: 0.75em 1em;
+    color: #f9f9f9;
+}
+.modal-wrapper > .modal-wrap > .modal-footer > .bt-close:hover{
+    background-color: #99251c;
+}
+.modal-wrapper > .modal-wrap > .modal-footer > .help{
+    float: right;
+}
+.modal-wrapper > .modal-wrap > .modal-footer > .help > a{
+    color: #2196F3;
+    text-decoration: underline;
 }
 /************************** response ****************************/
 @media(max-width: 1400px){
