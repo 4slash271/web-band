@@ -249,6 +249,7 @@ html,body{
 
 /********************** modal-wrapper***************************/
 .modal-wrapper{
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -261,7 +262,9 @@ html,body{
     width: 800px;
     margin: 15vh auto;
     background-color: #f9f9f9;
-    box-shadow: 0,0,10px rgba(0,0,0,0.5)
+    box-shadow: 0,0,10px rgba(0,0,0,0.5);
+    transform: translateY(-100vh);
+    transition: all .5s;
 }
 .modal-wrapper > .modal-wrap > .modal-header{
     position: relative;
@@ -293,8 +296,6 @@ html,body{
 }
 .modal-wrapper > .modal-wrap > .modal-body{
     padding: 1em;
-}
-.modal-wrapper > .modal-wrap > .modal-body > form{
 }
 .modal-wrapper > .modal-wrap > .modal-body > form > *{
     width: 100%;
@@ -334,6 +335,11 @@ html,body{
     color: #2196F3;
     text-decoration: underline;
 }
+
+.modal-wrapper.active{
+    display: block;
+}
+
 /************************** response ****************************/
 @media(max-width: 1400px){
 
