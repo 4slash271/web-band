@@ -288,7 +288,10 @@ html,body{
     background-color: #ccc;
     color: #121212;
 }
-
+.contact-wrapper > .map-wrapper{
+    width: 100%;
+    height: 60vh;
+}
 
 /********************** footer-wrapper***************************/
 .footer-wrapper{
