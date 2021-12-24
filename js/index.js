@@ -16,6 +16,12 @@ $('.modal-wrapper .modal-wrap').click(function(e) {
 	e.stopPropagation()
 })
 
+$('.header-wrapper .mb-navi').click(function(){
+    $(".mb-navi-wrapper").removeClass("active")
+})
+
+
+
 var swiper = new Swiper(".main-wrapper .swiper-container", {
     loop:true,
     effect:"fade",

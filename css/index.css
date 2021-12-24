@@ -6,7 +6,6 @@
 html,body{
     font: 16px 'Lato', sans-serif;
     letter-spacing: -0.5px;
-    height: 5000px;
     color: #121212;
 }
 .wrapper{
@@ -27,7 +26,11 @@ html,body{
     font-style: italic;
     color: #aaa;
 }
-
+a.anchor{
+    display: inline;
+    list-style: 0;
+    height: 0;
+}
 /***********************header-wrapper***************************/
 .header-wrapper{
     position: fixed;
