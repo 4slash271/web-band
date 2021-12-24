@@ -1,9 +1,14 @@
-$(".bars-wrapper").click(function(){
+$(".bars-wrapper").click(function(e){
     $(".mb-navi-wrapper").toggleClass("active");
 })
 $(".tour-wrapper .bt-buy").click(function(){
-    $(".modal-wrapper").toggleClass("active");
+    $(".modal-wrapper").addClass("active");
+    $(".modal-wrapper > .modal-wrap").css("transform");
     $(".modal-wrapper > .modal-wrap").css("transform","translateY(0)");
+})
+$(".modal-wrapper .bt-send, .modal-wrapper .bt-close").click(function(e){
+    $(".modal-wrapper").removeClass("active");
+    $(".modal-wrapper > .modal-wrap").css("transform","translateY(-100vh)");
 })
 
 var swiper = new Swiper(".main-wrapper .swiper-container", {
