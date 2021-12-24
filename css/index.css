@@ -243,7 +243,52 @@ html,body{
 }
 
 
-/********************** map-wrapper *****************************/
+/********************** contact-wrapper *****************************/
+.contact-wrapper > .wrapper> .contact-wrap > .info-wrap{
+    width:50%;
+    float: left;
+}
+.contact-wrapper > .wrapper> .contact-wrap > .info-wrap > li{
+    font-size: 1.125em;
+    margin-bottom: 0.75em;
+}
+.contact-wrapper > .wrapper> .contact-wrap > .info-wrap > li > .fa{
+    width: 2em;
+}
+.contact-wrapper > .wrapper> .contact-wrap > .contact-form{
+    float: right;
+    width: 50%;
+}
+.contact-wrapper > .wrapper> .contact-wrap > .contact-form > input{
+    padding: 0.75em;
+    margin-bottom: 0.5em;
+    border: 1px solid #ccc;
+}
+.contact-wrapper > .wrapper> .contact-wrap > .contact-form > input:focus{
+    outline: 1px solid rgb(125, 192, 192);
+}
+.contact-wrapper > .wrapper> .contact-wrap > .contact-form > :nth-child(1){
+    float: left;
+    width: 48%;
+}
+.contact-wrapper > .wrapper> .contact-wrap > .contact-form > :nth-child(2){
+    float: right;
+    width: 48%;
+}
+.contact-wrapper > .wrapper> .contact-wrap > .contact-form > :nth-child(3){
+    width: 100%;
+}
+.contact-wrapper > .wrapper> .contact-wrap > .contact-form > :nth-child(4){
+    float: right;
+    padding: 0.75em 1em;
+    background-color: #121212;
+    color: #f9f9f9;
+}
+.contact-wrapper > .wrapper> .contact-wrap > .contact-form > :nth-child(4):hover{
+    background-color: #ccc;
+    color: #121212;
+}
+
 
 /********************** footer-wrapper***************************/
 
@@ -352,6 +397,20 @@ html,body{
 @media(max-width: 992px){
     .modal-wrapper > .modal-wrap{
         width: 700px;
+    }
+    .contact-wrapper > .wrapper> .contact-wrap > .info-wrap{
+        width: 100%;
+    }
+    .contact-wrapper > .wrapper> .contact-wrap > .contact-form{
+        width: 100%;
+    }
+    .contact-wrapper > .wrapper> .contact-wrap > .contact-form >:nth-child(1){
+        width: 100%;
+        float: none;
+    }
+    .contact-wrapper > .wrapper> .contact-wrap > .contact-form >:nth-child(2){
+        width: 100%;
+        float: none;
     }
 
 }

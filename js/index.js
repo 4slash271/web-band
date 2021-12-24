@@ -6,9 +6,14 @@ $(".tour-wrapper .bt-buy").click(function(){
     $(".modal-wrapper > .modal-wrap").css("transform");
     $(".modal-wrapper > .modal-wrap").css("transform","translateY(0)");
 })
-$(".modal-wrapper .bt-send, .modal-wrapper .bt-close").click(function(e){
-    $(".modal-wrapper").removeClass("active");
-    $(".modal-wrapper > .modal-wrap").css("transform","translateY(-100vh)");
+
+$('.modal-wrapper, .modal-wrapper .bt-close').click(function(e) {
+	$('.modal-wrapper').removeClass('active')
+	$('.modal-wrapper > .modal-wrap').css('transform', 'translateY(-100vh)')
+})
+
+$('.modal-wrapper .modal-wrap').click(function(e) {
+	e.stopPropagation()
 })
 
 var swiper = new Swiper(".main-wrapper .swiper-container", {
