@@ -291,6 +291,28 @@ html,body{
 
 
 /********************** footer-wrapper***************************/
+.footer-wrapper{
+    padding: 3em 0;
+    text-align: center;
+}
+.footer-wrapper > .sns-wrap{
+    margin-bottom: 1em;
+}
+.footer-wrapper > .sns-wrap > li{
+    display: inline-block;
+    font-size: 1.25em;
+    margin: 0 .125em;
+    opacity: .7;
+}
+.footer-wrapper > .sns-wrap > li:hover{
+    opacity: .9;
+}
+.footer-wrapper > .copyright{
+    opacity: .7;
+}
+.footer-wrapper > .copyright > a{
+    text-decoration: underline;
+}
 
 /********************** modal-wrapper***************************/
 .modal-wrapper{
